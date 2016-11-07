@@ -245,7 +245,6 @@ class HomeMainVC: UIViewController,UICollectionViewDelegate,UICollectionViewData
     }
     
     
-    
     //按钮方法
     func btnClick(_ btn:UIButton){
         print("点击  \(btn.tag)");
