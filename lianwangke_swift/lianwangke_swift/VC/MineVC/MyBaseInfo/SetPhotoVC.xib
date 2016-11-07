@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPhotoVC" customModule="lianwangke_swift" customModuleProvider="target">
+            <connections>
+                <outlet property="photoBtn" destination="by2-rO-S9n" id="aFc-kR-GJC"/>
+                <outlet property="photoImageView" destination="TCa-ZP-FZO" id="gmq-J9-zea"/>
+                <outlet property="pictureBtn" destination="Xkb-Tp-Uii" id="33s-dx-ExW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="by2-rO-S9n">
+                    <rect key="frame" x="40" y="465" width="520" height="45"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.5450980392" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="hKU-1l-wpE"/>
+                    </constraints>
+                    <state key="normal" title="拍照">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="photoBtn:" destination="-1" eventType="touchUpInside" id="A1c-HG-0TM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-Tp-Uii">
+                    <rect key="frame" x="40" y="403" width="520" height="45"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.5450980392" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0ic-sc-sIg"/>
+                    </constraints>
+                    <state key="normal" title="从手机相册选择">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pictureBtn:" destination="-1" eventType="touchUpInside" id="eEG-Fx-enx"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBg" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-ZP-FZO">
+                    <rect key="frame" x="211" y="100" width="178" height="178"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="178" id="oym-KX-f0n"/>
+                        <constraint firstAttribute="width" constant="178" id="yXd-H6-U9c"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TCa-ZP-FZO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="34w-mn-fgO"/>
+                <constraint firstItem="by2-rO-S9n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="4qf-2N-hDx"/>
+                <constraint firstItem="by2-rO-S9n" firstAttribute="top" secondItem="Xkb-Tp-Uii" secondAttribute="bottom" constant="17" id="AdS-GQ-fbH"/>
+                <constraint firstAttribute="bottom" secondItem="by2-rO-S9n" secondAttribute="bottom" constant="90" id="Qwl-VB-NOs"/>
+                <constraint firstItem="Xkb-Tp-Uii" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Rwl-Fg-stJ"/>
+                <constraint firstAttribute="trailing" secondItem="by2-rO-S9n" secondAttribute="trailing" constant="40" id="XNc-PQ-9v9"/>
+                <constraint firstItem="TCa-ZP-FZO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h9c-qf-4sY"/>
+                <constraint firstAttribute="trailing" secondItem="Xkb-Tp-Uii" secondAttribute="trailing" constant="40" id="uTj-fh-kqm"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="MainBg" width="73" height="73"/>
+    </resources>
+</document>

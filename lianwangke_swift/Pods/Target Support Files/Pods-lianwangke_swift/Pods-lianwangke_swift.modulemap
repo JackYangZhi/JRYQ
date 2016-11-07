@@ -1,0 +1,6 @@
+framework module Pods_lianwangke_swift {
+  umbrella header "Pods-lianwangke_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
